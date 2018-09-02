@@ -17,15 +17,15 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "vanangamudi"  # (translatable)
-BLOG_TITLE = "vanangamudi"  # (translatable)
+BLOG_AUTHOR = "jayamuthu"  # (translatable)
+BLOG_TITLE = "jayamuthu"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
-SITE_URL = "https://vanangamudi.github.io"
+SITE_URL = "https://jayamuthu.github.io"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://pages.gitlab.io/nikola/"
-BLOG_EMAIL = "selva.developer@gmail.com"
+BLOG_EMAIL = "mozhi.azhagi@gmail.com"
 BLOG_DESCRIPTION = "interpretations of my observations"  # (translatable)
 
 # Nikola is multilingual!
@@ -133,8 +133,7 @@ NAVIGATION_LINKS = {
         ("/categories/", "Tags"),
         ("/rss.xml", "RSS feed"),
         ('/stories/aboutme', 'About me'),
-        ('https://twitter.com/paarulakan', 'Twitter'),
-        ('https://github.com/vanangamudi', 'Github'),
+        ('https://github.com/jayamuthu', 'Github'),
 
     ),
 }
@@ -564,7 +563,7 @@ GITHUB_COMMIT_SOURCE = True
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
 # to the location of conf.py
-OUTPUT_FOLDER = '../vanangamudi.github.io'
+OUTPUT_FOLDER = '../jayamuthu.github.io/'
 
 # where the "cache" of partial generated content should be located
 # default: 'cache'
