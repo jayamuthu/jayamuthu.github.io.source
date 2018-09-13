@@ -8,9 +8,10 @@
 .. type: text
 
 
-Mu Selvakumar
 (vanangamudi)
 
 .. image::  /images/profile_pic.jpg
    
-An aspiring AGI, Deep learning enthusiast, who used to be coding maniac. 
+- B.E Computer Science Engineering, Govt. College of Engineering, Thanjavur.
+- HSC, Raja's Higher Secondary School, Thanjavur
+- SSLC, Govt. High School, Manojipatti, Thanjavur
