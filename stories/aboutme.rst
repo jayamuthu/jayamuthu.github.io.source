@@ -8,9 +8,13 @@
 .. type: text
 
 
-(vanangamudi)
+G Muthulakshmi
+
 
 .. image::  /images/profile_pic.jpg
+			:height: 150px
+			:align: right
+
    
 - B.E Computer Science Engineering, Govt. College of Engineering, Thanjavur.
 - HSC, Raja's Higher Secondary School, Thanjavur
