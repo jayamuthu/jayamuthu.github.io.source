@@ -1,4 +1,13 @@
- <html>
+<!--
+.. title: Convolutional Neural Networks
+.. slug: cnn
+.. date: 2018-09-02 21:43:40 UTC+05:30
+.. tags: CNN, Neural networks, Introduction,
+.. category: NN
+.. link: 
+.. description: 
+.. type: text
+-->
 <head>
 <style>
 
@@ -9,7 +18,7 @@
 <div class="convnet">
 <h1>WHAT IS CONVOLUTIONAL NEURAL NETWORK</h1>
 <p>
-<img src="../images/cnn/how human sees.jpeg"  class="humansees" </img> </p>
+<img src="/images/cnn/how human sees.jpeg"  class="humansees" </img> </p>
 
 
 <div class="paragraph">
@@ -21,7 +30,7 @@ to detect objects of an images and various position in images. CNN's are one of 
 For instance, the first layer might detect edges and curves in the image, the second layer might detect object body-parts(e.g., hands or paws or ears), the third layer might detect the whole object, etc</p></div>
 
 <div class="_input to the network"
-<p><img src="../images/cnn/threeinput.png"  class="three" height="300" width="700" class="center"</img></p></div>
+<p><img src="/images/cnn/threeinput.png"  class="three" height="300" width="700" class="center"</img></p></div>
 <p>
 <div class="paragraph">
 <p><h2> WHAT ARE FEATURES AND CLASSIFIERS </h2></P>
@@ -35,7 +44,7 @@ Feature extraction and classification are two key stages of a typical computer v
 <p>Difficult tasks require richer feature representation. It is difficult to detect a cat than detecting a digit. 
 </p>
 
-<p><img src="../images/cnn/feature values.jpeg"   height="300" width="500" class="center" </img></p>
+<p><img src="/images/cnn/feature values.jpeg"   height="300" width="500" class="center" </img></p>
  
 Our samples should have similar feature vectors, irrespective of their models, sizes, positions in the images, etc. Thus, a good feature should be informative, invariant to noise and a set of transformations (e.g., rotation and translation), and fast to compute.  
 For instance, features such as the number of wheels in the images, the number of doors in the images could help to classify the images into two different categories, namely "car"and "non-car." </P> </div>
@@ -48,7 +57,7 @@ For instance, features such as the number of wheels in the images, the number of
 <div class="paragraph"> 
 <p><h2>CONVOLUTIONAL LAYERS</h2></P>
 <p>A convolutional layer is the most important component of a CNN. It comprises a set of filters (also called convolutional kernels) which are convolved with a given input to generate an output feature map.
-</p><img src="../images/cnn/flash man.jpeg" align="right" height="300" width="300" </img></p>
+</p><img src="/images/cnn/flash man.jpeg" align="right" height="300" width="300" </img></p>
 </div>
 
 <div class="paragraph">
@@ -64,7 +73,7 @@ learning terms, this flashlight is called a filter/kernel and the region that it
 <p>
 In case of 2D convolution each filter is a matrix. As an example 3x3 Given a 2D input feature map and a convolution filter of matrix sizes 5x5 and 3x3, respectively, a convolution layer multiplies the 3x3 filter with a highlighted patch (also 3x3) of the input feature map and sums up all values to generate one value in the output feature map. The filter slides along the width and height of the input feature map and this process continues until the filter can no longer slide further.</p></div>
 
-<img src="../images/cnn/convolution operation.png" align="middle" height="300" width="600" class="center" </img>
+<img src="/images/cnn/convolution operation.png" align="middle" height="300" width="600" class="center" </img>
 
 <div class="paragraph">
 <p>
@@ -79,7 +88,7 @@ Such a reduction in dimensions provides moderate invariance to scale and pose of
 
 </div>
 
-<img src="../images/cnn/stride without pad.jpeg" height="300" width="680" class="center"</img>
+<img src="/images/cnn/stride without pad.jpeg" height="300" width="680" class="center"</img>
 
 <div class="paragraph">
 <p><h2>Zero-Padding:</h2></p> 
@@ -88,7 +97,7 @@ In convolutional neural networks, zero-padding refers to surrounding a matrix wi
 The computations that are performed at each step, as the filter is slid onto the input feature map to compute the corresponding value of the output feature map. The 3x3 filter is multiplied with the same sized region within a 7x7 input feature map (including zero-padding) and the resulting values are summed up to obtain a corresponding entry in the output feature map at each h x w and a stride length s, the output feature dimensions are given by     
 </p></div>
 <p>
-<img src="../images/cnn/padding formula.jpeg" height=250px width=600px  class="center"</img></p>
+<img src="/images/cnn/padding formula.jpeg" height=250px width=600px  class="center"</img></p>
 
 
 <div class="paragraph">
@@ -96,15 +105,15 @@ The computations that are performed at each step, as the filter is slid onto the
 
 
 
-<img src="../images/cnn/padding.jpeg" height="300" width="600" class="center" </img>
+<img src="/images/cnn/padding.jpeg" height="300" width="600" class="center" </img>
 <div class="paragraph">
 <p>
 If p denotes the increase in the input feature map along with each dimension (by padding zeros), we can represent the modified output feature map dimensions as follows: </p></div>
 
-<img src="../images/cnn/padding formula with p.jpeg" height=150px width=600px class="center"</img>
+<img src="/images/cnn/padding formula with p.jpeg" height=150px width=600px class="center"</img>
 </br>
 <p>The following picture  shows output(3x3) and input(5x5) with zero padding=1 and stride=2,</p>
-<img src="../images/cnn/stride.jpeg" height=300 width=600 class="center"</img></br>
+<img src="/images/cnn/stride.jpeg" height=300 width=600 class="center"</img></br>
 
 <div class="paragraph">
 <p>
@@ -198,7 +207,7 @@ Sigmoid:</b> Probability of anything between 0 to 1, so mainly its used to predi
 The figure shows the max pooling operation, where the maximum activation is chosen from the selected block of values. This window is slided across the input feature maps with a step size defined by the stride. If the size of the pooled region is given by<br> f x f , with a stride s, the size of the output feature map is  
 </p></div>
 
-<p><img src="../images/cnn/max pooling.jpeg" class="center" height="300" width=600 </img></br>
+<p><img src="/images/cnn/max pooling.jpeg" class="center" height="300" width=600 </img></br>
 
 
 <div class="paragraph">
@@ -208,7 +217,7 @@ The usual feed-forward layer is used at the end of the entire network. Think of 
 
 Fully connected layers correspond essentially to convolution layers with filters of size 1 x 1. Each unit in a fully connected layer is densely connected to all the units of the previous layer. </p>
 </div>
-<p><img src="../images/cnn/fully connected.jpeg" class="center" height=300 width=600</img></br>
+<p><img src="/images/cnn/fully connected.jpeg" class="center" height=300 width=600</img></br>
 
 <div class="paragraph">
 <p>
@@ -222,7 +231,7 @@ The input from the other layers is flattened and sent so as the transform the ou
 SOFT-MAX FUNCTION:</h2></p>
 <p>     This is a special kind of activation layer. We will get lots of output values for a set of images. Now we are going to apply soft-max on these value and it produces discrete probability vectors. It is special in the sense, the output for a particular neuron also depends upon every neuron in the layer.</p></div>
 
-<p><img src="../images/cnn/softmax function.jpeg" class="center"  height=300 width=400</img></br></p>
+<p><img src="/images/cnn/softmax function.jpeg" class="center"  height=300 width=400</img></br></p>
 
 
 <p>The output then is used to calculate the loss and back-propagation is employed to train the network.</p>
@@ -241,14 +250,14 @@ This layer uses a "loss function," also called the "objective function," to esti
 
 
 
-<p><img src="../images/cnn/loss formula2.jpeg" class="center"  height=150 width=500 </img></p>
+<p><img src="/images/cnn/loss formula2.jpeg" class="center"  height=150 width=500 </img></p>
 <div class="paragraph">
 <p>
 where y denotes the desired output and p is the probability for each output category. There is a total of N neurons in the output layer. The probability of each class can be calculated using a soft-max function. Due to the form of the normalizing function in the loss, this loss is also called the soft-max loss. </p></div>
 
 <div class="paragraph">
 <p>The overall Structure of CNN is following, </p>
-<p><img src="../images/cnn/overall convolutional network.jpeg"   class="center" height=400 width=800</img></br></p>
+<p><img src="/images/cnn/overall convolutional network.jpeg"   class="center" height=400 width=800</img></br></p>
 
 <p>
 To understand this clearly, we can take a sample image, </p>
